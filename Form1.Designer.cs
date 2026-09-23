@@ -31,6 +31,7 @@
             this.txtInput = new System.Windows.Forms.TextBox();
             this.btnAnalyze = new System.Windows.Forms.Button();
             this.lblresult = new System.Windows.Forms.Label();
+            this.btnEvaluate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtInput
@@ -59,11 +60,22 @@
             this.lblresult.TabIndex = 2;
             this.lblresult.Text = "label1";
             // 
+            // btnEvaluate
+            // 
+            this.btnEvaluate.Location = new System.Drawing.Point(12, 207);
+            this.btnEvaluate.Name = "btnEvaluate";
+            this.btnEvaluate.Size = new System.Drawing.Size(91, 23);
+            this.btnEvaluate.TabIndex = 3;
+            this.btnEvaluate.Text = "Run Evaluation";
+            this.btnEvaluate.UseVisualStyleBackColor = true;
+            this.btnEvaluate.Click += new System.EventHandler(this.btnEvaluate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 242);
+            this.Controls.Add(this.btnEvaluate);
             this.Controls.Add(this.lblresult);
             this.Controls.Add(this.btnAnalyze);
             this.Controls.Add(this.txtInput);
@@ -80,6 +92,7 @@
         private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Button btnAnalyze;
         private System.Windows.Forms.Label lblresult;
+        private System.Windows.Forms.Button btnEvaluate;
     }
 }
 
